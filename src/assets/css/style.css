@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #3E3E3E;
+	font-size: 20px;
+}
+.mybus__top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 25px 40px;
+	background-color: #fff;
+}
+.mybus__top p{
+	color: #3E3E3E;
+	font-weight: 500;
+	font-size: 22px;
+}
+.mybus__top h1{
+	font-weight: bold;
+	font-size: 22px;
+	color: #1DA1F2;
+}
+.mybus__top h1 span{
+	color: #0073BF;
+}
+.mybus__main{
+	color: #fff;
+	padding: 0 40px;
+}
+.mybus__dropdown{
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #828282;
+	position: relative;
+}
+.mybus__dropdown p{
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+}
+.mybus__dropdown .hide__block{
+	position: absolute;
+	width: 40%;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background-color: #fff;
+	color: #3E3E3E;
+	padding-bottom: 15px;
+	border-radius: 15px;
+	display: none;
+	opacity: 0;
+	transition: 0.4s;
+}
+.mybus__dropdown .hide__block p{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.mybus__dropdown .hide__block p input{
+	display: block;
+	width: 300px;
+	outline: none;
+	height: 24px;
+	font-size: 16px;
+	font-family: inherit;
+}
+.hide__block.open{
+	opacity: 1;
+	top: 45px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.mybus__inner{
+	border-bottom: 1px solid #828282;
+}
+.mybus__inner td{
+	text-align: center;
+	width: 33.3333%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.mybus__inner td img{
+	width: 30px;
+	height: 30px;
+}
